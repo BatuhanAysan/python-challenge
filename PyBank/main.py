@@ -7,9 +7,8 @@ import os
 
 # Files to load and output (update with correct file paths)
 
-file_to_load = os.path.join("PyBank", "Resources", "budget_data.csv")  # Input file path
-file_to_output = os.path.join("PyBank", "analysis", "budget_analysis.txt")  # Output file path
-
+file_to_load = os.path.join(os.path.dirname(__file__), "Resources", "budget_data.csv")  # Input file path
+file_to_output = os.path.join(os.path.dirname(__file__), "analysis", "budget_analysis.txt")  # Output file path
 
 # Open and read the csv
 with open(file_to_load, 'r') as financial_data:
